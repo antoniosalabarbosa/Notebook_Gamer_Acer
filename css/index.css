@@ -51,8 +51,8 @@ section{
     display: flex;
 }
 section.sec1{
-    padding: 0 var(--padding-side);
-    min-height: 500px;
+    padding: 0 var(--padding-side) 100px var(--padding-side);
+    min-height: 400px;
     flex-direction: column;
     background-image: url(../src/bg.jpg);
     background-position: center 55%;
@@ -75,13 +75,14 @@ header.hd_nav nav{
     justify-content: space-evenly;
 }
 header.hd_nav nav span{
+    margin: 0 10px;
     color: #fff;
     font-size: 1.2em;
     cursor: pointer;
 }
 
 div.txt-sec1{
-    margin: 4% 0 0 0;
+    margin: 5% 0 0 0;
     max-width: 50%;
 }
 div.txt-sec1 span,
@@ -92,7 +93,7 @@ div.txt-sec1 button{
 }
 div.txt-sec1 span{
     margin: 0 0 5px 0;
-    font-size: 2vw;
+    font-size: 1.5em;
     font-weight: 400;
 }
 div.txt-sec1 h1{
