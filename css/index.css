@@ -1,0 +1,115 @@
+:root{
+    --gray-dark: #1B1B1B;
+    --gray-medium: #2D2C2C;
+    --gray-regular: #3E3E3E;
+    --red-medium: #BD0A0A;
+    --red-regular: #b72d2d;
+
+    --padding-side: 7%;
+}
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html, body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+div#root{
+   width: 100%;
+   max-width: 1600px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+header{
+    width: 100%;
+    display: flex;
+}
+header.hd_socials{
+    padding: 10px var(--padding-side);
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--gray-dark);
+}
+header.hd_socials a{
+    margin: 0 15px;
+}
+header.hd_socials a img{
+    width: 30px;
+    height: 30px;
+}
+section{
+    width: 100%;
+    display: flex;
+}
+section.sec1{
+    padding: 0 var(--padding-side);
+    min-height: 500px;
+    flex-direction: column;
+    background-image: url(../src/bg.jpg);
+    background-position: center 55%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header.hd_nav{
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+header.hd_nav > strong{
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+}
+header.hd_nav nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+header.hd_nav nav span{
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+div.txt-sec1{
+    margin: 4% 0 0 0;
+    max-width: 50%;
+}
+div.txt-sec1 span,
+div.txt-sec1 h1,
+div.txt-sec1 h2,
+div.txt-sec1 button{
+    color: #fff;
+}
+div.txt-sec1 span{
+    margin: 0 0 5px 0;
+    font-size: 2vw;
+    font-weight: 400;
+}
+div.txt-sec1 h1{
+    font-size: calc(1.2em + 3vw);
+    font-weight: 600;
+}
+div.txt-sec1 h2{
+    margin: 10px 0 0 0;
+    max-width: 520px;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+div.txt-sec1 button{
+    margin: 50px 0 0 0;
+    padding: 7px 60px;
+    font-size: 1.5em;
+    background-color: var(--red-medium);
+    cursor: pointer;
+    transition: 200ms ease;
+}
