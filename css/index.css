@@ -20,7 +20,6 @@ a{
 }
 html, body{
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 body{
     display: flex;
@@ -38,6 +37,10 @@ header{
     display: flex;
 }
 header.hd_socials{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 10px var(--padding-side);
     height: 50px;
     justify-content: flex-end;
@@ -62,8 +65,8 @@ section{
     display: flex;
 }
 section.sec1{
-    padding: 0 var(--padding-side) 100px var(--padding-side);
-    min-height: 500px;
+    padding: 70px var(--padding-side) 100px var(--padding-side);
+    min-height: 520px;
     flex-direction: column;
     background-image: url(../src/bg.jpg);
     background-position: center 55%;
@@ -75,6 +78,21 @@ header.hd_nav{
     justify-content: space-between;
     align-items: center;
 }
+
+@media screen and (min-width: 851px){
+    section.sec1{
+        margin: 50px 0 0 0;
+    }
+    header.hd_nav{
+        padding: 0 var(--padding-side);
+        position: fixed;
+        top: 50px;
+        right: 0;
+        left: 0;
+        background-color: #000;
+    }
+}
+
 strong.logo_hd{
     color: #fff;
     font-size: 1.5em;
@@ -85,7 +103,7 @@ header.hd_nav nav{
     display: flex;
     justify-content: space-evenly;
 }
-header.hd_nav nav span{
+header.hd_nav nav a{
     margin: 0 10px;
     color: #fff;
     font-size: 1.2em;
@@ -94,7 +112,7 @@ header.hd_nav nav span{
 }
 
 div.txt-sec1{
-    margin: 2% 0 0 0;
+    margin: calc(2vw + 15px) 0 0 0;
     max-width: 50%;
 }
 div.txt-sec1 span,
@@ -146,7 +164,7 @@ div.line{
     }
     header.hd_nav nav{
         position: fixed;
-        top: 50px;
+        top: 62px;
         right: -100%;
         padding: 20px 30px;
         width: 70%;
@@ -157,12 +175,12 @@ div.line{
         background-color: var(--gray-regular);
         transition: 200ms ease;
     }
-    header.hd_nav nav span{
+    header.hd_nav nav a{
         margin: 10px 0;
         padding: 10px;
         width: 100%;
     }
-    header.hd_nav nav span:hover{
+    header.hd_nav nav a:hover{
         color: var(--gray-dark);
         background-color: #fff;
     }
@@ -174,9 +192,11 @@ div.line{
         transition: 200ms ease;
     }
     header.hd_socials{
+        padding: 30px var(--padding-side);
         position: fixed;
         top: 0;
         justify-content: space-between;
+        border-bottom: 2px solid var(--red-medium);
     }
     div.socials{
         display: none;
@@ -185,7 +205,6 @@ div.line{
         display: initial;
     }
     section.sec1{
-        margin: 50px 0 0 0;
         background-image: url(../src/bg-2.jpg);
         background-position: center;
         background-size: center;
@@ -268,8 +287,9 @@ div.cont-sec2{
 }
 div.cont-sec2 > img{
     margin: 0 20px 0 0;
-    width: 450px;
-    height: 342px;
+    width: 100%;
+    max-width: 450px;
+    max-height: 342px;
 }
 div.txt-sec2 h3{
     margin: 0 0 10px 0;
