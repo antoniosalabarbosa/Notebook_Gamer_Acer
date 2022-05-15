@@ -14,6 +14,10 @@
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+a{
+    color: #fff;
+    text-decoration: none;
+}
 html, body{
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -530,4 +534,117 @@ div.cont-imgs-note button{
     font-size: 1.5em;
     background-color: var(--red-medium);
     cursor: pointer;
+}
+
+@media screen and (max-width: 850px){
+    div.imgs-note{
+        margin: -100px 0 0 0;
+        flex-wrap: wrap;
+    }
+    div.imgs-note div.img{
+        margin: 10px;
+        width: 90%;
+        max-width: 500px;
+        min-height: 250px;
+    }
+    div.cont-imgs-note button{
+        width: 60%;
+    }
+}
+
+section.sec5{
+    padding: 30px var(--padding-side);
+    flex-direction: column;
+    background-color: var(--gray-medium);
+}
+section.sec5 h3{
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+}
+div.cont-sec5{
+    margin: 50px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+div.addtional{
+    margin: 0 20px;
+    max-width: 600px;
+    display: flex;
+}
+div.addtional img{
+    margin: 0 10px 0 0;
+    width: 108px;
+    height: 108px;
+}
+div.txt-additional strong{
+    color: #fff;
+    font-size: 1.5em;
+}
+div.txt-additional p{
+    color: #fff;
+    font-size: 1.15em;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 1000px){
+    section.sec5{
+        align-items: center;
+    }
+    div.cont-sec5{
+        margin: 20px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+    div.addtional{
+        margin: 20px 0;
+        max-width: none;
+    }
+}
+
+footer{
+    padding: 40px var(--padding-side);
+    border-top: 7px solid var(--red-medium);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+}
+div.make-by{
+    text-align: center;
+}
+div.make-by p,
+div.make-by a{
+    color: #fff;
+    font-size: 1.1em;
+}
+div.nome-ft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.nome-ft strong{
+    color: #fff;
+    font-size: 1.8em;
+}
+div.nome-ft span{
+    color: #fff;
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+@media screen and (max-width: 850px){
+    footer{
+        padding: 20px 0;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    div.nome-ft{
+        margin: 5vw 0;
+    }
+    footer div.socials{
+        display: initial;
+    }
 }
