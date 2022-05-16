@@ -10,22 +10,18 @@ function toggleNavRes(){
 
 burguer.addEventListener("click", toggleNavRes);
 
+/*
 const links = document.querySelectorAll("header.hd_nav nav a");
-const section = document.querySelectorAll("section");
 
-function jumpTo(id){
-    let url = location.href;
-    location.replace("#"+id);
+let url = location.href;
+function replaceUrl(){
     history.replaceState(null, null, url);
-    
-    window.scrollBy({
-        top: -110,
-        behavior: 'smooth',
-    });
+    history.pushState(null, document.title, url);
 }
 
-links.forEach( (e) => {
-    e.addEventListener("click", ()=> {
-        jumpTo(e.textContent)
+links.forEach((e)=>{
+    e.addEventListener("click",()=>{
+        replaceUrl();
     });
 });
+*/
