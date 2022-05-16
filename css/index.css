@@ -532,8 +532,22 @@ div.nome-ft span{
     div#burguer{
         display: flex;
         cursor: pointer;
+    }
+    div#burguer div.line{
         transition: 200ms ease;
     }
+
+    div#burguer.active div.line:nth-child(1){
+        transform: rotate(45deg) translate(5px, 10px);
+    }
+    div#burguer.active div.line:nth-child(2){
+        opacity: 0;
+    }
+    div#burguer.active div.line:nth-child(3){
+        transform: rotate(-45deg) translate(5px, -11px);
+    }
+
+
     header.hd_socials{
         padding: 30px var(--padding-side);
         position: fixed;
