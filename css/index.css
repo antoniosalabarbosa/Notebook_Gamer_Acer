@@ -93,14 +93,13 @@ header.hd_nav{
     height: 60px;
     justify-content: space-between;
 }
-
 strong.logo_hd{
     color: #fff;
     font-size: 1.5em;
     text-align: center;
 }
 header.hd_nav nav{
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -111,7 +110,6 @@ header.hd_nav nav a{
     cursor: pointer;
     transition: 200ms ease all;
 }
-
 div.txt-sec1{
     margin: 60px 0 0 0;
     max-width: 50%;
@@ -499,6 +497,10 @@ div.nome-ft span{
         left: 0;
         background-color: #000;
     }
+    header.hd_nav nav a:hover{
+        font-weight: bold;
+        text-decoration: underline;
+    }
 }
 @media screen and (max-width: 850px){
     :target{
@@ -512,7 +514,7 @@ div.nome-ft span{
         top: 62px;
         right: -100%;
         padding: 20px 30px;
-        width: 70%;
+        width: 60%;
         max-width: 400px;
         height: 100%;
         flex-direction: column;
